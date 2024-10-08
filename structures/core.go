@@ -10,7 +10,8 @@ type PositionDiff struct {
 }
 
 type Broker interface {
-	Ping() error
+	Connect() error
+	Close() error
 	Equity() float32
 	FreeMargin() float32
 	SupportTicker(string) bool

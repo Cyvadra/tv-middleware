@@ -1,6 +1,8 @@
 module github.com/Cyvadra/tv-middleware
 
-go 1.21.1
+go 1.22
+
+toolchain go1.22.8
 
 require github.com/gin-gonic/gin v1.10.0
 
