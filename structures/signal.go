@@ -36,9 +36,8 @@ type TvcSignal struct {
 }
 
 type TvFormatedSignal struct {
-	Action       string
-	Contracts    float32
-	Ticker       string
-	PositionSize float32
-	ExitCode     int8
+	Action       string  `json:"action" eg:"buy"`
+	Contracts    float32 `json:"contracts" eg:"655780.706"`
+	Ticker       string  `json:"ticker" eg:"REEFUSDT.P"`
+	PositionSize float32 `json:"position_size" eg:"655780.706"`
 }
